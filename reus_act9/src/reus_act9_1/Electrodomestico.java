@@ -8,6 +8,38 @@ public class Electrodomestico {
 	private Colores color = Colores.blanco;
 	private double peso = 5;
 	
+	public double getPreciob() {
+		return preciob;
+	}
+
+	public void setPreciob(double preciob) {
+		this.preciob = preciob;
+	}
+
+	public Consumo getConsumo() {
+		return consumo;
+	}
+
+	public void setConsumo(Consumo consumo) {
+		this.consumo = consumo;
+	}
+
+	public Colores getColor() {
+		return color;
+	}
+
+	public void setColor(Colores color) {
+		this.color = color;
+	}
+
+	public double getPeso() {
+		return peso;
+	}
+
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
+
 	public Electrodomestico() {
 		super();
 		this.preciob = preciob;
@@ -32,6 +64,7 @@ public class Electrodomestico {
 		this.peso = peso;
 	}
 
+	
 	@Override
 	public String toString() {
 		return "Electrodomestico [preciob=" + preciob + ", consumo=" + consumo + ", color=" + color + ", peso=" + peso
