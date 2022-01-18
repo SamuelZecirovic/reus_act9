@@ -3,10 +3,10 @@ package reus_act9_1;
 
 public class Electrodomestico {
 
-	private double preciob = 100; 
-	private Consumo consumo = Consumo.F;
-	private Colores color = Colores.blanco;
-	private double peso = 5;
+	protected double preciob = 100; 
+	protected Consumo consumo = Consumo.F;
+	protected Colores color = Colores.blanco;
+	protected double peso = 5;
 	
 	
 	
