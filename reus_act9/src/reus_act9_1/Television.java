@@ -17,8 +17,8 @@ public class Television extends Electrodomestico{
 		return TDT;
 	}
 
-	public void setTDT(boolean tDT) {
-		TDT = tDT;
+	public void setTDT(boolean TDT) {
+		TDT = TDT;
 	}
 
 	public Television() {
