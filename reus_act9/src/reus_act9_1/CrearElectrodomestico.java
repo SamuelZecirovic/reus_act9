@@ -74,30 +74,7 @@ import javax.swing.JOptionPane;
 			
 			double peso = Double.parseDouble(JOptionPane.showInputDialog("peso"));
 		
-			if (consumo == Consumo.F ) {
-				precio = 10;
-			}else if (consumo == Consumo.E){
-				precio = 30;
-			}else if (consumo == Consumo.D){
-				precio = 50;
-			}else if (consumo == Consumo.C){
-				precio = 60;
-			}else if (consumo == Consumo.B){
-				precio = 80;
-			}else if (consumo == Consumo.A){
-				precio = 100;
-			}
-			
-			if (peso < 20 ) {
-				precio = precio + 10;
-			}else if (peso < 50 ){
-				precio = precio + 50;
-			}else if (peso < 80){
-				precio = precio + 80;
-			}else if (peso > 80){
-				precio = precio + 100;
-			}
-			
+			precio = Electrodomestico.PrecioFinal(peso, consumo);			
 			
 			Electrodomestico e3 = new Electrodomestico(precio,consumo, color, peso);	
 			System.out.println(e3.toString());

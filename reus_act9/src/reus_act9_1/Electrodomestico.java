@@ -8,6 +8,8 @@ public class Electrodomestico {
 	private Colores color = Colores.blanco;
 	private double peso = 5;
 	
+	
+	
 	public double getPreciob() {
 		return preciob;
 	}
@@ -65,9 +67,41 @@ public class Electrodomestico {
 	}
 
 	
+	public static double PrecioFinal(double peso, Consumo consumo) {
+		
+		double precio = 0;
+		
+		if (consumo == Consumo.F ) {
+			precio = 10;
+		}else if (consumo == Consumo.E){
+			precio = 30;
+		}else if (consumo == Consumo.D){
+			precio = 50;
+		}else if (consumo == Consumo.C){
+			precio = 60;
+		}else if (consumo == Consumo.B){
+			precio = 80;
+		}else if (consumo == Consumo.A){
+			precio = 100;
+		}
+		
+		if (peso < 20 ) {
+			precio = precio + 10;
+		}else if (peso < 50 ){
+			precio = precio + 50;
+		}else if (peso < 80){
+			precio = precio + 80;
+		}else if (peso > 80){
+			precio = precio + 100;
+		}
+		
+		return precio;
+		
+	}
+	
 	@Override
 	public String toString() {
-		return "Electrodomestico [preciob=" + preciob + ", consumo=" + consumo + ", color=" + color + ", peso=" + peso
+		return "Electrodomestico [precio=" + preciob + ", consumo=" + consumo + ", color=" + color + ", peso=" + peso
 				+ "]";
 	}
 	
