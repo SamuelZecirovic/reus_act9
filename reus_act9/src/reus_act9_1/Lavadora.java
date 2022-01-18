@@ -22,4 +22,13 @@ public class Lavadora extends Electrodomestico {
 	public double getCarga() {
 		return this.carga;
 	}
+	
+	public double precioFinal(double carga, double peso, Consumo consumo) {
+		double precio = super.PrecioFinal(peso, consumo);
+		if(carga > 30)
+			precio += 30;
+		
+		return precio;
+		
+	}
 }
